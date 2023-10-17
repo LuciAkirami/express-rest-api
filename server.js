@@ -5,4 +5,5 @@ app.get("/", (req, res) => {
   res.send("Hello Express");
 });
 
-app.listen(5000);
+const port=5000;
+app.listen(port,()=>console.log(`server is running on port ${port}`));
