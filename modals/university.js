@@ -1,29 +1,21 @@
-import mongoose from 'mongoose';
-let University_schema=mongoose.Schema({
-    id:{
-        unique:true
+import mongoose from "mongoose";
+let University_schema = mongoose.Schema({
+  id: {
+    type:String
+  },
+  name: {
+    type: String
+  },
+  location: {
+    city: {
+      type: String,
     },
-    name:{
-      type:String,
-      unique:true,
-      require:true
+    country: {
+      type: String,
     },
-    location:{
-        city:{
-            type:String, 
-            require:true
-        },
-        country:{
-            type:String, 
-            require:true
-        },
-    },
-    programs:[
-        {
-            type:String
-        }
-    ]
-  });
+  },
+  programs: [String],
+});
 
-const university_modal = new mongoose.model('Univerties',University_schema);
+const university_modal = new mongoose.model("Universties", University_schema);
 export default university_modal;
