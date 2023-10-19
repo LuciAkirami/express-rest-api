@@ -1,4 +1,4 @@
-import university_modal from '../modals/university';
+import university_modal from '../modals/university.js';
 
 
 async function getUniversities(req,res){
@@ -11,7 +11,7 @@ async function getUniversities(req,res){
       }
 }
 
-async function getUnivercity(req,res){
+async function getUniversityBycity(req,res){
     try {
         let { city } = req.body;
         let data = await university_modal.findOne({city});
@@ -57,4 +57,4 @@ async function deleteUniversity(req,res){
       }
 }
   
-export {getUniversities,getUnivercity,createUniversity,updateUniversity,deleteUniversity};
+export {getUniversities,getUniversityBycity,createUniversity,updateUniversity,deleteUniversity};
