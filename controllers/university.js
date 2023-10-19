@@ -8,7 +8,7 @@ async function getUniversities(req,res){
         res.send(data);
       } catch (error) {
         console.log("error:", error.message);
-        res.send(`eeror:${error.message}`);
+        res.send(`error:${error.message}`);
       }
 }
 //to fetch the data of universtities available in specific city.
@@ -20,7 +20,7 @@ async function getUnivercityByCity(req,res){
         res.send(data);
       } catch (error) {
         console.log("error:", error.message);
-        res.send(`eeror:${error.message}`);
+        res.send(`error:${error.message}`);
       }
 }
 //to fetch the data of specific universtity.
@@ -32,7 +32,7 @@ async function getUnivercityByName(req,res){
         res.send(data);
       } catch (error) {
         console.log("error:", error.message);
-        res.send(`eeror:${error.message}`);
+        res.send(`error:${error.message}`);
       }
 }
 //to add university in db.
@@ -44,7 +44,7 @@ async function createUniversity(req,res){
         res.send(data);
       } catch (error) {
         console.log("error:", error.message);
-        res.send(`eeror:${error.message}`);
+        res.send(`error:${error.message}`);
       }
 }
 //to update specific university in db.
@@ -56,7 +56,7 @@ async function updateUniversity(req,res){
         res.send(data);
       } catch (error) {
         console.log("error:", error.message);
-        res.send(`eeror:${error.message}`);
+        res.send(`error:${error.message}`);
       }
 }
   
@@ -69,7 +69,7 @@ async function deleteUniversity(req,res){
         res.send(data);
       } catch (error) {
         console.log("error:", error.message);
-        res.send(`eeror:${error.message}`);
+        res.send(`error:${error.message}`);
       }
 }
   
