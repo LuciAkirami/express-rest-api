@@ -1,8 +1,14 @@
 import mongoose from "mongoose";
+import dotenv from 'dotenv';
+
+// Load environment variables from .env
+dotenv.config();
+
+const MONGODB_URI = process.env.MONGODB_URI;
 
 function connect_db() {
   mongoose
-    .connect(`enter your url`)
+    .connect(MONGODB_URI)
     .then((res) => console.log("Mongodb is connected"));
 }
 
