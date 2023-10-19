@@ -11,14 +11,12 @@ async function getUniversities(req,res){
         res.send(`error:${error.message}`);
       }
 }
-<<<<<<< HEAD
 
 async function getUniversityBycity(req,res){
-=======
+
 //to fetch the data of universtities available in specific city.
 //route: public
 async function getUnivercityByCity(req,res){
->>>>>>> 2814bf4c6d3f2386cd8df11a919a7833e54e16f0
     try {
         let { city } = req.body;
         let data = await university_modal.find({city});
