@@ -7,9 +7,7 @@ dotenv.config();
 const MONGODB_URI = process.env.MONGODB_URI;
 
 function connect_db() {
-  mongoose
-    .connect(MONGODB_URI)
-    .then((res) => console.log("Mongodb is connected"));
+  mongoose.connect('`).connect(MONGODB_URI).then((res) => console.log("Mongodb is connected"));
 }
 
 export default connect_db;

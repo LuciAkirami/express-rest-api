@@ -1,4 +1,4 @@
-import university_modal from '../modals/university';
+import university_modal from '../modals/university.js';
 
 //to fetch the data of all universtities.
 //route: public
@@ -11,6 +11,9 @@ async function getUniversities(req,res){
         res.send(`error:${error.message}`);
       }
 }
+
+async function getUniversityBycity(req,res){
+
 //to fetch the data of universtities available in specific city.
 //route: public
 async function getUnivercityByCity(req,res){
@@ -73,4 +76,4 @@ async function deleteUniversity(req,res){
       }
 }
   
-export {getUniversities,getUnivercity,createUniversity,updateUniversity,deleteUniversity};
+export {getUniversities,getUniversityBycity,createUniversity,updateUniversity,deleteUniversity};
